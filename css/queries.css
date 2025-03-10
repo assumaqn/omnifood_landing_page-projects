@@ -1,0 +1,233 @@
+/***** value belwo 1300 (for small screen laptops)***/
+
+@media (max-width: 84em) {
+  .hero {
+    max-width: 120rem;
+  }
+  .heading-primary {
+    font-size: 4.4rem;
+  }
+  .gallary {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/***** value belwo 1200(for land scape tablet) ***/
+@media (max-width: 75em) {
+  html {
+    font-size: 56.25%;
+  }
+
+  .heading-seacondary {
+    font-size: 3.6rem;
+  }
+  .heading-teritary {
+    font-size: 2.4rem;
+  }
+  .grid {
+    column-gap: 4.8rem;
+    row-gap: 6.4rem;
+  }
+  .hero {
+    gap: 4.8rem;
+  }
+  .header {
+    padding: 0 3.2rem;
+  }
+  .testimonail-container {
+    padding: 9.6rem 3.2rem;
+  }
+  .main-nav-list {
+    gap: 3.2rem;
+  }
+}
+/***** value belwo 928(for land scape tablet) ***/
+@media (max-width: 58em) {
+  html {
+    font-size: 50%;
+  }
+  .hero {
+    grid-template-columns: 1fr;
+    padding: 0 7rem;
+  }
+
+  .hero-img {
+    width: 60%;
+  }
+  .hero-text-box,
+  .hero-image-box {
+    text-align: center;
+  }
+  .logos img {
+    height: 2.4rem;
+  }
+  .step-number {
+    font-size: 7.4rem;
+  }
+  .deliverd-meals {
+    justify-content: center;
+    margin-top: 3.2rem;
+  }
+  .meal-content {
+    padding: 2.4rem 3rem 3rem 3rem;
+  }
+  .testimonial-section {
+    grid-template-columns: 1fr;
+  }
+  .gallary {
+    grid-template-columns: repeat(6, 1fr);
+  }
+  .CTA {
+    grid-template-columns: 3fr 2fr;
+  }
+  .cta-form {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .btn--form {
+    margin-top: 1.2rem;
+  }
+  .mobile-nav {
+    display: block;
+    z-index: 9999;
+  }
+  .header {
+    position: relative;
+  }
+  .main-nav {
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translateX(100%);
+    height: 100vh;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.856);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    pointer-events: none;
+    visibility: hidden;
+    transition: all 0.2s ease-in;
+  }
+  .nav-open .main-nav {
+    opacity: 1;
+    pointer-events: auto;
+    visibility: visible;
+    transform: translateX(0);
+  }
+  .nav-open .mobile-icon[name="close-outline"] {
+    display: block;
+  }
+  .nav-open .mobile-icon[name="menu-outline"] {
+    display: none;
+  }
+
+  .main-nav-list {
+    flex-direction: column;
+    gap: 4.8rem;
+  }
+  .main-nav-links:link,
+  .main-nav-links:visited {
+    font-size: 3rem;
+  }
+}
+@media (max-width: 48em) {
+  .grid--2,
+  .grid--3-cols,
+  .grid--4-cols {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .heading-seacondary {
+    margin-bottom: 3.2rem;
+  }
+  .diets {
+    grid-column: 1/-1;
+    justify-self: center;
+  }
+  .pricing-plan {
+    width: 100%;
+  }
+  .grid-footer {
+    grid-template-columns: repeat(6, 1fr);
+  }
+  .logos img {
+    height: 2rem;
+  }
+
+  .footter-nav1,
+  .footter-nav2,
+  .footter-nav3 {
+    grid-row: 1;
+    grid-column: span 2;
+    margin-bottom: 3.2rem;
+  }
+  .logo-col,
+  .footer-address {
+    grid-column: span 3;
+  }
+}
+@media (max-width: 35em) {
+  .section-hero {
+    padding: 2.4rem 0 6.4rem 0;
+  }
+  .hero {
+    padding: 0 3.2rem;
+  }
+  .btn,
+  .btn:link,
+  .btn:visited {
+    padding: 2.4rem 1.6rem;
+  }
+  .hero-img {
+    width: 80%;
+  }
+  .logos img {
+    height: 1.2rem;
+  }
+  .grid--1,
+  .grid--2,
+  .grid--3-cols,
+  .grid--4-cols {
+    grid-template-columns: 1fr;
+  }
+  .step-img-box {
+    transform: translateY(2.6rem);
+  }
+  .step-img-box:nth-child(2) {
+    grid-row: 1;
+  }
+  .step-img-box:nth-child(6) {
+    grid-row: 5;
+  }
+  .testiomonials {
+    grid-template-columns: 1fr;
+  }
+  .gallary {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1.2rem;
+  }
+  .CTA {
+    grid-template-columns: 1fr;
+  }
+  .CTA-text-box {
+    padding: 3.2rem;
+  }
+  .CTA-img-box {
+    height: 32rem;
+    grid-row: 1;
+  }
+}
+.sticky .header {
+  position: fixed;
+  height: 8rem;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.856);
+  z-index: 999;
+  top: 0;
+  bottom: 0;
+  padding-top: 0;
+  padding-bottom: 0;
+}
+.sticky .section-hero {
+  margin-top: 9.6rem;
+}
